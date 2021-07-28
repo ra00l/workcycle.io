@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Release Mobile",
+    "goalId": "1",
+    "status": "normal",
+    "progress": "43",
+    "dueDate": "27.09.17",
+    "numbersOfTaks": "249",
+    "numberOfOpenedTaks": "121"
+  },
+  {
+    "name": "Deliver Community",
+    "goalId": "1",
+    "status": "slow",
+    "progress": "31",
+    "dueDate": "27.09.17",
+    "numbersOfTaks": "17",
+    "numberOfOpenedTaks": "10"
+  },
+  {
+    "name": "Reduce the Prod. $",
+    "goalId": "1",
+    "status": "danger",
+    "progress": "10",
+    "dueDate": "27.09.17",
+    "numbersOfTaks": "17",
+    "numberOfOpenedTaks": "15"
+  },
+  {
+    "name": "Release Desktop version 2.0.1",
+    "goalId": "1",
+    "status": "great",
+    "progress": "88",
+    "dueDate": "27.09.17",
+    "numbersOfTaks": "14",
+    "numberOfOpenedTaks": "12"
+  },
+  {
+    "name": "Sprint 10",
+    "goalId": "1",
+    "status": "normal",
+    "progress": "75",
+    "dueDate": "27.09.17",
+    "numbersOfTaks": "35",
+    "numberOfOpenedTaks": "23"
+  }
+]

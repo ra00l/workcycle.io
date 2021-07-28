@@ -1,0 +1,8 @@
+# installed libraries
+node_modules/
+
+.idea
+
+
+package-lock.json
+build/

@@ -1,0 +1,113 @@
+//  .goals-list
+
+// .goal-container
+
+.goal
+  display: inline-block
+  background: #FFFFFF
+  width: 270px
+  height: 344px
+  margin: 10px 20px 20px 0
+  border-radius: 5px
+  box-shadow: 0.4px 0.03px 8px 0px rgba(0, 0, 0, 0.21)
+  transition: all 1s ease-in-out
+
+  // &-chart-container
+  //   padding: 8px 12px
+  //   background: #EFEFEF
+  //   text-align: center
+  //   height: 86px
+
+  //   .goal-chart
+  //     height: 70px
+  //     display: flex
+  //     align-items: center
+  //     justify-content: center
+
+  //     .VictoryContainer
+  //       border: 0!important
+
+  &-information
+    padding: 16px
+    height: 279px
+
+    &-timeline
+      color: #9A9A9A
+
+    &-name
+      color: #747575
+      text-align: center
+      font-size: 16px
+      display: flex
+      align-items: center
+      justify-content: center
+      height: 100px
+
+      > div
+        overflow: hidden
+        text-overflow: ellipsis
+
+    &-target
+      display: flex
+      align-items: center
+      justify-content: center
+      position: relative
+ 
+      div
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 50%
+
+      i
+        font-size: 120px
+        color: #4cd965
+        position: relative
+        top: -14px
+        width: 120px
+        height: 120px
+        line-height: 150px
+
+  &.goal-fail
+    .goal-items,
+    .goal-due-date
+      color: #FF8080
+
+  &.goal-amber
+    .goal-items,
+    .goal-due-date
+      color: #FAA928
+  
+  &.goal-almost
+    .goal-items,
+    .goal-due-date
+      color: #4DA1FF
+
+  &.goal-success
+    .goal-items,
+    .goal-due-date
+      color: #19B136
+
+.create-goal-modal-container
+  overflow-y: visible!important
+
+.create-new-goal-modal
+  .goal-dueDate
+    margin-bottom: 24px
+    display: flex
+    align-items: center
+
+    .goal-dueDate-label
+      font-size: 18px
+      font-weight: 700
+      margin-right: 16px
+
+    .SingleDatePicker
+      margin-top: 8px
+
+      .SingleDatePickerInput
+        border-radius: 5px
+        box-shadow: 2px 0.03px 8px 0px rgba(0, 0, 0, 0.21)
+
+      .DateInput
+        border-radius: 5px

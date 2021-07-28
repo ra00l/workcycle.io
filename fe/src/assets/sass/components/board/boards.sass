@@ -1,0 +1,63 @@
+.boards-list, .goals-list
+  .section
+    &-title h4
+      margin: 0
+      font-size: 18px
+      font-weight: 600
+      color: $black
+
+    &-body
+      overflow: auto
+      white-space: nowrap
+      padding-left: 3px
+      padding-right: 3px
+
+      .add-your-board,
+      .no-boards-in-folder,
+      .add-your-goal
+        background: #fff
+        border: 2px dashed #86BCFE
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 142px
+        border-radius: 2px
+        flex-direction: column
+        cursor: pointer
+
+        img
+          display: block
+          width: 50px
+
+        h4
+          margin: 12px 0 0
+          color: #50A2FF
+          font-style: italic
+          font-size: 18px
+
+      .no-boards-in-folder
+        background: transparent
+        border: 0
+
+      .add-your-goal
+        height: 374px
+
+        img
+          width: 280px
+
+.board-card, .folder.card, .goal
+  position: relative
+
+  > i.far
+    position: absolute
+    top: 12px
+    left: 12px
+    font-size: 18px
+    color: #999
+
+  .board-actions, .goal-actions, .folders-actions
+    position: absolute
+    top: -5px
+    right: -5px
+    display: inline-block
+    line-height: 15px

@@ -1,0 +1,195 @@
+.workitem-modal
+  min-height: 500px
+
+.board-header
+  h3
+    margin-top: 0
+    margin-bottom: 20px
+
+.work-item-config
+  margin-top: 20px
+
+
+.dialog--glass-pane .content-wrapper.workitem-move-to
+  overflow: initial
+
+.workitem-create
+  .custom-fields
+    margin-bottom: 28px
+
+    .custom-field
+      margin-bottom: 12px
+
+      .fields-list-item
+        width: 100%
+
+      .workitem-field
+        height: 40px
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        overflow: hidden
+
+      .field-short-text,
+      .field-text,
+      .field-number,
+      .field-selector
+        .field-container
+          display: block
+          width: 100%
+          text-align: center
+          height: 20px
+          overflow: hidden
+          border: 1px dashed transparent
+
+        &:hover
+          .field-container
+            border-color: gray
+
+        input
+          width: 100%
+
+      .workitem-row-item.field-date
+        width: 100%
+
+      .add-custom-field
+        display: flex
+        align-items: center
+
+    .workitem-updates-section
+      .upload-file-on-comment
+        cursor: pointer
+        p
+          margin: 0
+
+      .add-new-comment-wrapper
+        border: 1px solid rgba(255, 255, 255, 1)
+        background-color: rgba(255, 255, 255, 1)
+        border-radius: 5px
+        box-shadow: 2px 0.03px 8px 0px rgba(0,0,0,0.21)
+
+        .workitem-updates-section__comments__comment__files
+          padding: 0 16px
+
+        .rdw-editor-wrapper
+          margin-top: 12px
+
+        .rdw-editor-toolbar
+          border: 0
+
+        .add-new-comment-editor
+          padding: 0 16px 12px
+          font-size: 14px
+
+          .public-DraftStyleDefault-block
+            margin: 2px 0
+
+          .public-DraftEditorPlaceholder-inner
+            font-style: italic
+
+          .rdw-mention-link
+            color: #0095FF
+
+        .upload-file-on-comment
+          height: 40px!important
+
+        .actions
+          padding: 0 16px 16px
+
+          .upload-button
+            float: left
+
+          button
+            padding: 8px 12px
+            min-width: 120px
+            margin-left: 10px
+
+      &__comments
+        overflow-y: scroll
+        margin-top: 16px
+        padding: 0 10px 4px
+        max-height: 480px
+
+        &__comment
+          margin-top: 16px
+
+          .comment-text
+            p
+              text-overflow: ellipsis
+              overflow-x: hidden
+            img
+              max-width: 100%
+              border: solid 1px #666
+              border-radius: 5px
+
+          .userAvatar
+            float: left
+
+          &__files
+            margin-top: 16px
+
+
+    .workitem-files-section
+      .list-of-files
+        margin-top: 16px
+
+  .workitem-move-to
+    > div > div > div > div
+      overflow-y: initial!important
+
+
+  // list of uploaded files
+  .workitem-files-section__files
+    display: inline-block
+    margin-right: 6px
+    width: 200px
+    min-height: 150px
+    overflow: hidden
+    padding: 4px 0 0
+    border-color: rgba(221, 221, 221, 0.5)
+    transition: border-color 0.5s ease
+
+    &:hover
+      border-color: #000000
+
+      a .workitem-files-section__files__actions
+        background: rgba(0, 0, 0, 0.1)
+
+    .workitem-files-section__files__actions
+      display: flex
+      align-items: center
+      width: 100%
+      color: #000000
+      font-size: 12px
+      padding: 4px
+      justify-content: space-between
+
+      i
+        padding: 6px
+        transition: color 0.5s ease
+        cursor: pointer
+
+        &:hover
+          color: rgb(255, 61, 61)
+
+      span:first-child
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+
+    a
+      position: relative
+      display: block
+      padding: 0 4px
+      height: 100%
+
+      img
+        height: 100px
+        width: 100%
+
+        &.workitem-files-section__files__icon
+          // width: auto
+          // height: auto
+          width: 100px
+          height: 100px

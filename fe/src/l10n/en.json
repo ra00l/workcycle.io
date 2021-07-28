@@ -1,0 +1,165 @@
+{
+  "API_ERRORS": {
+    "INVALID_CREDENTIALS": "Email or password do not match",
+    "EMAIL_NOT_VALID": "No email provided or email not valid",
+    "INVALID_RESET_TOKEN": "Invalid or expired token!"
+  },
+  "APP_NAME": "Work Cycle",
+  "BOARDS": {
+    "TITLE": "Boards",
+    "BOARD": {
+      "SETUP": "Board setup",
+      "ACCESS_BY": "This item is accessed by:",
+      "NO_MEMBERS": "No members",
+      "PEOPLE": "People",
+      "PERMISSION": {
+        "CAN_VIEW": "can view",
+        "CAN_EDIT": "can edit",
+        "CAN_MANAGE": "can manage"
+      },
+      "MESSAGES": {
+        "CLONE_ITEM_WITH_FAILURE": "There was an error cloning your board. Try again in a couple of seconds",
+        "SAVE_BOARD_TEMPLATE_WITH_FAILURE": "There was an error saving the board template. . Try again in a couple of seconds"
+      }
+    }
+  },
+  "BUTTONS": {
+    "RESET_MY_PASSWORD": "Reset my password",
+    "SET_PASSWORD": "Set password",
+    "BACK_TO_LOGIN": "Back to Login",
+    "ADD_MEMBER": "Add member",
+    "SAVE": "Save",
+    "CANCEL": "Cancel"
+  },
+  "CONTACT": {
+    "TITLE": "Contact us"
+  },
+  "TUTORIALS": {
+    "TITLE": "Tutorials"
+  },
+  "FEEDBACK": {
+    "NAV_TITLE": "Send feedback"
+  },
+  "GOALS": {
+    "TITLE": "Goals",
+    "GOAL": {
+      "SETUP": "Goal setup"
+    }
+  },
+  "LOGIN": {
+    "TITLE": "Login",
+    "ALREADY_HAVE_AN_ACCOUNT": "Already have an account?"
+  },
+  "REGISTER": {
+    "TITLE": "Register",
+    "CREATE_NEW_ACCOUNT": "Create a new account",
+    "DO_NOT_HAVE_AN_ACCOUNT": "Do not have an account?"
+  },
+  "RESET_PASSWORD": {
+    "TITLE": "Reset password",
+    "PROBLEMS_WITH_THE_ACCOUNT": "Problems with the account?",
+    "STILL_HAVE_QUESTIONS": "Still have questions ?",
+    "NEW_PASSWORD": "New Password",
+    "GREAT": "Great !",
+    "PASSWORD_WAS_CHANGED": "Your password was changed",
+    "CHECK_YOUR_EMAIL": "Check your email !",
+    "WE_SENT_YOU_AN_RESET_PASSWORD_EMAIL": "We sent you an email to reset your password"
+  },
+  "FORM": {
+    "LABEL": {
+      "BOARD": "Board",
+      "COMPANY": "Your Company",
+      "CHILD_TO": "Child to",
+      "EMAIL": "Your Email",
+      "PASSWORD": "Your Password",
+      "NAME": "Your Name",
+      "TEAM_SIZE": "Team size",
+      "NEW_PASSWORD": "Your new password",
+      "CONFIMR_NEW_PASSWORD": "Re-enter your new password",
+      "DESCRIPTION": "Description",
+      "NEST": "Nest"
+    },
+    "PLACEHOLDER": {
+      "COMPANY": "company name",
+      "EMAIL": "type your email",
+      "FULL_BOARD_NAME": "Enter the board name",
+      "FULL_FOLDER_NAME": "Enter the folder name",
+      "FULL_GOAL_NAME": "Enter the goal name",
+      "PASSWORD": "password",
+      "NAME": "John Doe",
+      "TEAM_SIZE": "1-5",
+      "EMAIL_OR_NAME": "Enter email address or name",
+      "BOARD_DESCRIPTION": "Enter board description",
+      "WORKITEM_DESCRIPTION": "Workitem details",
+      "NEST_NAME": "Nest name",
+      "SEARCH": "Search"
+    }
+  },
+  "LABELS": {
+    "OR": "or"
+  },
+  "PROVIDERS": {
+    "GOOGLE": "Google",
+    "GITHUB": "Github"
+  },
+  "VALIDATIONS": {
+    "REQUIRED": "This field is required",
+    "EMAIL": "Invalid email address",
+    "PASSWORD_DO_NOT_MATCH": "You need to enter the same password"
+  },
+  "FIELDS": {
+    "FIELD": {
+      "MESSAGES": {
+        "NAME_ALREADY_PRESENT": "We have already a field with the name %{fieldName}",
+        "FIELD_NOT_FOUND": "We cannot delete the field. Try again later.",
+        "FIELD_UPDATE_FAILURE": "We cannot update the field."
+      }
+    }
+  },
+  "NESTS": {
+    "NEST": {
+      "MESSAGES": {
+        "CREATE_WITH_FAILURE": "You could not create your nest. Try again later",
+        "UPDATE_WITH_FAILURE": "You could not perform the current action on this nest. Try again later"
+      }
+    }
+  },
+  "FOLDERS": {
+    "FOLDER": {
+      "SETUP": "Folder setup"
+    }
+  },
+  "WORKITEMS": {
+    "COUNT": {
+      "ONE": "item",
+      "MANY": "items"
+    },
+    "WORKITEM": {
+      "TITLE": "Work Item details",
+      "MESSAGES": {
+        "GENERIC_ERROR": "We cannot create your workitem at the moment. Try again in a couple of minutes.",
+        "TITLE_REQUIRED": "The title of the work item is required.",
+        "CREATE_ITEM_WITH_SUCCESS": "Your workitem %{workitemName} has been created.",
+        "EDIT_ITEM_WITH_SUCCESS": "Your workitem %{workitemName} has been edited successfully.",
+        "DELETE_ITEM_WITH_SUCCESS": "You have successfully deleted the work item",
+        "DELETE_ITEM_WITH_FAILURE": "You could not delete your work item. Try again in a couple of seconds",
+        "CLONE_ITEM_WITH_FAILURE": "You could not clone your work item. Try again in a couple of seconds",
+        "CLONE_ITEM_WITH_SUCCESS": "You have successfully clone the work item",
+        "REORDER_ITEM_WITH_FAILURE": "Could not re-order your workitems. Try again in a couple of seconds",
+        "ADD_COMMENT_WITH_FAILURE": "Could not add your comment. Try again in a couple of seconds",
+        "REMOVE_COMMENT_WITH_FAILURE": "Could not remove your comment at this moment. Try again in a couple of seconds",
+        "REMOVE_FILE_WITH_FAILURE": "Could not remove your file at this moment. Try again in a couple of seconds",
+        "UPDATE_COMMENT_WITH_FAILURE": "Could not update your comment at this moment. Try again in a couple of seconds",
+        "ADD_COMMENT_WITH_SUCCESS": "Your comment was successfully added",
+        "REMOVE_COMMENT_WITH_SUCCESS": "Your comment was been successfully deleted",
+        "REMOVE_FILE_WITH_SUCCESS": "You're file has been deleted with success",
+        "UPDATE_COMMENT_WITH_SUCCESS": "Your comment was successfully changed",
+        "GET_WORKITEM_ERROR": "Error getting the workitem!"
+      }
+    }
+  },
+  "ERROR": "General error",
+  "ERRORS": {
+    "LIMITED_PERMISSION": "Permssion Error. Your permissions in this workspace are limited. Please contact the admin to change your permission"
+  }
+}

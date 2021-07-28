@@ -1,0 +1,63 @@
+.dependency-modal
+  i
+    font-size: 22px
+    cursor: pointer
+
+  &-title
+    margin: 0 0 16px
+    font-weight: 600
+
+  &-count-section
+    .count-section-label
+      font-style: italic
+      color: #999999
+
+    .count-section-number
+      font-size: 16px
+      font-weight: 600
+
+  &-filter-search
+    .divider
+      padding: 16px
+      font-style: italic
+      color: #999999
+
+    .form-group
+      margin: 0
+
+  &-actions
+    margin-top: 16px
+
+  .workitems-list
+    margin-top: 24px
+    // min-height: 150px
+    max-height: 500px
+    padding: 4px
+    overflow: auto
+
+    .workitem
+      padding: 6px 0px 6px 16px
+      height: 40px
+      cursor: pointer
+      border: 1px solid white
+      background-color: white
+      border-radius: 5px
+      box-shadow: 2px 0.03px 8px 0px rgba(0, 0, 0, 0.21)
+      margin-bottom: 8px
+
+      display: flex
+      align-items: center
+      justify-content: space-between
+
+      > div
+        display: inline-block!important
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+        padding-right: 12px
+
+      label
+        font-weight: normal
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis

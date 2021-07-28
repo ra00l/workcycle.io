@@ -1,0 +1,236 @@
+.add-new-work-item input.form-control
+  height: 35px
+.status-field .status-field-possible-values .status-field-possible-value
+  padding: 6px
+  font-size: 14px
+  margin-bottom: 5px
+
+input.form-control.person-search
+  margin-top: -8px
+  border-bottom-left-radius: 0
+  border-bottom-right-radius: 0
+  font-size: 16px
+
+.field-header
+  margin-right: 4px
+
+.nests-list
+  transition: all .5s ease
+
+.workitem-row
+  display: block
+  margin-bottom: 8px
+
+  &.add-new-work-item .workitem-field
+    visibility: hidden
+    &.field-number, &.field-title
+      visibility: visible
+    &.field-title
+      float: left
+      border: none
+      cursor: auto
+      background: transparent
+      box-shadow: none
+
+
+  .workitem-field
+    margin-right: 16px
+    height: 48px
+    cursor: pointer
+    font-size: 14px
+    border: 1px solid white
+    background-color: white
+    border-radius: 5px
+    box-shadow: 2px 0.03px 8px 0px rgba(0, 0, 0, 0.21)
+    line-height: 1.42857
+    color: #555555
+    background-image: none
+
+    &:last-child
+      margin-right: 0
+
+    &.field-title
+      width: 700px
+      margin-right: 16px
+      display: inline-block
+
+      .field-title-container
+        padding: 10px 16px
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+        .field-title-actions
+          display: flex
+          align-items: center
+
+          > div > button
+            padding: 0!important
+            width: auto!important
+            height: auto!important
+
+        .field-title-comments
+          font-size: 18px
+          color: #E8E6E6
+          margin-right: 6px
+          margin-top: -3px
+
+          i.far
+            margin-left: 5px
+
+
+        .field-title-text
+          white-space: nowrap
+          overflow: hidden
+          text-overflow: ellipsis
+          width: 100%
+          color: black
+
+        .percent
+          font-weight: 700
+          font-size: 14px
+          color: $black
+          min-width: 30px
+          text-align: center
+          display: inline-block
+
+          &-done
+            color: #51C40A
+
+        .divider
+          color: gray
+          margin: 0 8px
+
+        &-actions-comments
+          display: inline-block
+          margin-right: 16px
+          color: rgba(232, 230, 230, 1)
+
+        &-actions-comments-unread
+          color: rgba(255, 154, 3, 1)
+
+    .field-container
+      height: 100%
+      display: flex
+      align-items: center
+      justify-content: center
+      overflow: hidden
+
+      .field-placeholder
+        width: 100%
+        display: block
+        min-height: 9px
+        overflow: hidden //raul: see a scrollbar in item detail instead of selected text
+
+      .field-edit
+        outline: none
+        border: 0
+
+      // number field
+    &.field-number
+      width: 92px
+      padding: 10px 16px
+      display: inline-block
+
+      .field-container
+        justify-content: flex-start
+        overflow: hidden
+        border: 1px dashed transparent
+        span
+          overflow: hidden
+
+        &:hover
+          border-color: gray
+
+    // selector field
+    &.field-selector
+      width: 150px
+      display: inline-block
+
+    // text field
+    &.field-text,
+    &.field-short-text,
+    &.field-external-link
+      width: 318px
+      padding: 10px 16px
+      display: inline-block
+      position: relative
+
+      .field-container
+        justify-content: flex-start
+        overflow: hidden
+        border: 1px dashed transparent
+
+        &-external-link
+          margin-right: 25px
+
+        &:hover
+          border-color: gray
+
+      .field-link-icon
+        position: absolute
+        top: 1px
+        right: 0px
+        padding: 12px
+
+    // person field
+    &.field-person
+      width: 92px
+      display: inline-block
+
+    // person field
+    &.field-dependency
+      width: 160px
+      display: inline-block
+
+    // percentage field
+    &.field-percentage
+      width: 120px
+      padding: 10px 16px
+      display: inline-block
+
+      .field-container
+        font-size: 14px
+        font-weight: 600
+
+  .workitem-children
+    padding: 0
+    background: transparent
+    border: none
+    box-shadow: none
+
+    &.workitem-children-level-1
+      padding-left: 24px
+      .field-title.workitem-field
+        width: 676px
+
+    &.workitem-children-level-2
+      padding-left: 24px
+      .field-title.workitem-field
+        width: 652px
+
+    &.workitem-children-level-3
+      padding-left: 24px
+      .field-title.workitem-field
+        width: 628px
+
+    &.workitem-children-level-4
+      padding-left: 24px
+      .field-title.workitem-field
+        width: 604px
+
+    &.workitem-children-level-5
+      padding-left: 24px
+      .field-title.workitem-field
+        width: 580px
+
+
+input.form-control.person-search
+  margin-top: -8px
+  border-bottom-left-radius: 0
+  border-bottom-right-radius: 0
+  font-size: 16px
+
+
+

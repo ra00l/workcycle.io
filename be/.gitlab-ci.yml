@@ -1,0 +1,30 @@
+stages:
+    - build
+    - deploy
+
+before_script:
+  - apt-get update -qy
+
+build:artifact:
+  image: node:latest
+  stage: build
+  cache:
+    paths:
+        - node_modules/
+  script:
+    - apt-get -qq update
+    - npm set progress=false
+    - npm install --silent
+  only:
+    - master
+
+deploy:heroku:
+  image: ruby:2.3
+  stage: deploy
+  script:
+    - gem install dpl
+    - dpl --provider=heroku --app=workcycle-api-test --api-key=heroku-api-key --strategy=git
+ 
+  only:
+    - master
+    

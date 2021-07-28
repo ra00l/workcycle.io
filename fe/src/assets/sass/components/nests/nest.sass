@@ -1,0 +1,100 @@
+.nest
+  margin-top: 24px
+  white-space: nowrap
+  overflow: auto
+
+  &.first-nest-of-the-board
+    margin-top: 0
+
+  &-title-container
+
+    .nest-title
+      font-size: 16px
+      font-style: italic
+      font-weight: 700
+      cursor: pointer
+
+    .nest-title--drag-icon
+      @include opacity(0)
+      margin-right: 6px
+      cursor: move
+      transition: all 0.7s ease-in-out
+
+    .nest-title--collapse-icon
+      margin-right: 6px
+      font-size: 16px
+      cursor: pointer
+
+    .nest-title--actions
+      @include opacity(1)
+      margin-left: 12px
+
+    &:hover .nest-title--drag-icon
+      @include opacity(1)
+
+  .add-new-work-item
+
+    .form-group
+      display: inline-block
+      margin-right: 16px
+
+      &.is-loading
+        position: relative
+
+        &:after
+          @include animation('spinAround 1s infinite linear')
+          border: 1px solid #0095FF
+          border-radius: 50%
+          border-right-color: transparent
+          content: ""
+          display: block
+          height: 24px
+          width: 24px
+          position: absolute
+          right: 12px
+          top: 10px
+
+    .workitem-row-item
+      visibility: hidden
+      display: inline-block
+
+      &-person
+        width: 92px
+
+      &-dependency
+        width: 160px
+
+      &-percentage
+        width: 120px
+
+      &-text,
+      &-short-text,
+      &-external-link
+        width: 318px
+
+      &-selector
+        width: 150px
+
+      &-number
+        visibility: visible
+        width: 92px
+        height: 36px
+        margin-top: 6px
+        font-weight: 700
+        font-size: 14px
+        box-shadow: none
+        border: 1px solid
+
+        > div
+          padding: 7px 16px
+
+
+@include keyframes(spinAround)
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(359deg)
+  // from
+  //   transform: rotate(0deg)
+  // to
+  //   transform: rotate(359deg)

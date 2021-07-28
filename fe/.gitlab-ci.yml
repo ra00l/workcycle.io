@@ -1,0 +1,19 @@
+# image: node:latest
+
+stages:
+#   - build
+  - deploy
+
+before_script:
+  - apt-get update -qy
+
+
+deploy:heroku:
+  image: ruby:2.3
+  stage: deploy
+  script:
+    - gem install dpl
+    - dpl --provider=heroku --app=workcycle-fe-test --api-key=heroku-api-key --strategy=git
+  only:
+    - develop
+    

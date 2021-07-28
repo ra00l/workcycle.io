@@ -1,0 +1,47 @@
+.workitem-field.field-date
+  width: 188px
+  display: inline-block
+
+  .field-container
+    overflow: visible
+
+  .SingleDatePicker
+    .SingleDatePickerInput
+      background: transparent
+      border: 0
+
+      .DateInput
+        height: 46px
+        padding-top: 6px
+
+      .DateInput__display-text
+        border: 1px dashed transparent
+
+      &:hover .DateInput__display-text
+        border-color: gray
+
+.workitem-field.field-timeline
+  width: 340px
+  display: inline-block
+
+  .field-container
+    overflow: visible
+
+  .DateRangePicker
+    .DateRangePickerInput
+      border: 0
+      background: transparent
+
+      .DateInput
+        height: 46px
+        padding-top: 6px
+
+      .DateInput__display-text
+        border: 1px dashed transparent
+
+      .DateInput:hover .DateInput__display-text
+        border-color: gray
+
+.SingleDatePicker__picker--portal,
+.DateRangePicker__picker--portal
+  z-index: 9999

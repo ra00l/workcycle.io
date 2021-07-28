@@ -1,0 +1,238 @@
+
+
+.nests-list.table
+  .workitem-children
+    margin-top: 0
+
+  .add-new-work-item input.form-control
+    height: 35px
+    border-radius: 0
+    width: 500px
+
+  .field-title-actions button
+    padding: 0 12px !important
+    height: 20px !important
+
+  .field-header
+    margin-right: 0
+  .fields-list-item-short-text-title
+    width: 500px
+
+  .workitem-row
+    display: block
+    margin-bottom: 0
+    line-height: 0
+
+    .workitem-field
+      margin-right: 0
+      height: 35px
+      cursor: pointer
+      font-size: 14px
+      border: 1px solid #ddd
+      background-color: white
+      border-radius: 0
+      box-shadow: none
+      line-height: 1.42857
+      color: #555555
+      background-image: none
+      overflow: hidden
+
+      &:last-child
+        margin-right: 0
+
+      &.field-title
+        width: 500px
+        margin-right: 0
+        display: inline-block
+
+        .field-title-container
+          padding: 10px 16px
+          height: 100%
+          line-height: 100%
+          display: flex
+          align-items: center
+          justify-content: space-between
+
+          .field-title-actions
+            display: flex
+            align-items: center
+
+            > div > button
+              padding: 0!important
+              width: auto!important
+              height: auto!important
+
+          .field-title-comments
+            font-size: 18px
+            color: #E8E6E6
+            margin-right: 6px
+            margin-top: -3px
+
+            i.far
+              margin-left: 5px
+
+
+          .field-title-text
+            white-space: nowrap
+            overflow: hidden
+            text-overflow: ellipsis
+            width: 100%
+            color: black
+
+          .percent
+            font-weight: 700
+            font-size: 14px
+            color: $black
+            min-width: 30px
+            text-align: center
+            display: inline-block
+
+            &-done
+              color: #51C40A
+
+          .divider
+            color: gray
+            margin: 0 8px
+
+          &-actions-comments
+            display: inline-block
+            margin-right: 16px
+            color: rgba(232, 230, 230, 1)
+
+          &-actions-comments-unread
+            color: rgba(255, 154, 3, 1)
+
+      .field-container
+        height: 100%
+        line-height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        overflow: hidden
+
+        .field-placeholder
+          width: 100%
+          display: block
+          min-height: 9px
+          overflow: hidden //raul: see a scrollbar in item detail instead of selected text
+
+        .field-edit
+          outline: none
+          border: 0
+
+      // number field
+      &.field-number
+        width: 92px
+        padding: 2px 16px
+        display: inline-block
+
+        .field-container
+          justify-content: flex-start
+          overflow: hidden
+          border: 1px dashed transparent
+          span
+            overflow: hidden
+
+          &:hover
+            border-color: gray
+
+      // selector field
+      &.field-selector
+        width: 150px
+        display: inline-block
+
+      &.field-date
+        width: 188px
+        .SingleDatePicker .SingleDatePickerInput .DateInput
+          height: 25px
+          padding: 3px
+          padding-top: 0
+          font-size: 14px
+          line-height: 20px
+
+          .DateInput__display-text
+            padding: 0
+
+          .SingleDatePickerInput__clear-date
+            padding: 5px
+
+      // text field
+      &.field-text,
+      &.field-short-text,
+      &.field-external-link
+        width: 318px
+        padding: 10px 16px
+        display: inline-block
+        position: relative
+
+        .field-container
+          justify-content: flex-start
+          overflow: hidden
+          border: 1px dashed transparent
+
+          &-external-link
+            margin-right: 25px
+
+          &:hover
+            border-color: gray
+
+        .field-link-icon
+          position: absolute
+          top: 1px
+          right: 0px
+          padding: 12px
+
+      // person field
+      &.field-person
+        width: 92px
+        display: inline-block
+
+        img
+          width: 28px !important
+          height: 28px !important
+
+      // person field
+      &.field-dependency
+        width: 160px
+        display: inline-block
+
+      // percentage field
+      &.field-percentage
+        width: 120px
+        padding: 10px 16px
+        display: inline-block
+
+        .field-container
+          font-size: 14px
+          font-weight: 600
+
+  .workitem-children
+    padding: 0
+    background: transparent
+    border: none
+    box-shadow: none
+
+    &.workitem-children-level-1
+      padding-left: 24px
+      .field-title.workitem-field
+        width: 476px
+
+    &.workitem-children-level-2
+      padding-left: 24px
+      .field-title.workitem-field
+        width: 452px
+
+    &.workitem-children-level-3
+      padding-left: 24px
+      .field-title.workitem-field
+        width: 428px
+
+    &.workitem-children-level-4
+      padding-left: 24px
+      .field-title.workitem-field
+        width: 404px
+
+    &.workitem-children-level-5
+      padding-left: 24px
+      .field-title.workitem-field
+        width: 380px

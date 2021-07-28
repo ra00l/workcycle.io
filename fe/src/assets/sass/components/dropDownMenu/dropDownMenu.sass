@@ -1,0 +1,39 @@
+.dd-menu
+  &-items
+    ul
+      padding: 16px!important
+      border: 1px solid rgba(232, 230, 230, 1)
+      background-color: $white
+      border-radius: 5px
+      box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.21)
+
+      li
+        display: block
+        padding: 6px 0
+        font-weight: 600
+
+        i
+          margin-right: 6px
+
+.dd-menu .dd-menu-items ul li > *:not(.dd-item-ignore),
+.dd-menu .dd-menu-items ol li > *:not(.dd-item-ignore)
+  display: block;
+  padding: 6px 0;
+  font-weight: 600;
+
+.dd-menu.dd-menu-sm .dd-menu-items
+  width: 200px
+  ul
+    li
+      cursor: pointer
+      opacity: .7
+      transition: all .3s ease-in-out
+
+    li:hover
+      opacity: 1
+      background-color: transparent!important
+
+.workitem-row-item-title-actions,
+.nest-title--actions
+  i.fa.fa-chevron-circle-down
+    font-size: 20px

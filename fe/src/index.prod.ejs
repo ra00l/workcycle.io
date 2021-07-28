@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title><%= htmlWebpackPlugin.options.title %></title>
+
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/assets/images/favicon.png" type="image/png" />
+
+    <% for (key in htmlWebpackPlugin.files.css) { %>
+      <link href="/<%= htmlWebpackPlugin.files.css[key] %>" rel="stylesheet">
+    <% } %>
+  </head>
+  <body class="PURE_BLUE">
+    <div id="root">
+      <div class="loader-container">
+        <div class="center-block text-center loader">
+          <div class="loader-circle"></div>
+          <span>&nbsp;</span>
+        </div>
+      </div>
+    </div>
+
+    <% for (key in htmlWebpackPlugin.files.chunks) { %>
+      <script src="/<%= htmlWebpackPlugin.files.chunks[key].entry %>" type="text/javascript"></script>
+    <% } %>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107672927-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+
+      gtag('config', 'UA-107672927-2');
+    </script>
+  </body>
+</html>

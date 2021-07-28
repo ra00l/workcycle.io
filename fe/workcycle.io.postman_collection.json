@@ -1,0 +1,2183 @@
+{
+	"info": {
+		"_postman_id": "6930d89f-40e1-8ad5-1464-f86a3a15b5d1",
+		"name": "workcycle.io",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "account",
+			"description": "",
+			"item": [
+				{
+					"name": "account/reset",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "password",
+									"value": "cacaca",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/account/reset/78271e5562aabe7fba6ce62561e9d1b97f8b70f9",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"account",
+								"reset",
+								"78271e5562aabe7fba6ce62561e9d1b97f8b70f9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "account/login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "raul.popescu@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "cacaca",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/account/login",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"account",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "account/forgot",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "raul.popescu@gmail.com",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/account/forgot",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"account",
+								"forgot"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "account/create-team",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "raul.popescu+wk2@gmail.com",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "raul",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "companyName",
+									"value": "creative clr",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "teamSize",
+									"value": "100",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/account/create-team",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"account",
+								"create-team"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "account/confirm",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{host}}/account/confirm",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"account",
+								"confirm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "account/validate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{host}}/account/validate",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"account",
+								"validate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "account/edit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{host}}/account/edit",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"account",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "account/edit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Raul P",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/account/edit",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"account",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "account/workspaces",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{host}}/account/workspaces",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"account",
+								"workspaces"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "workspace",
+			"description": "",
+			"item": [
+				{
+					"name": "workspace-user-add",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiMSIsImlhdCI6MTUwODU2NzAyMywiZXhwIjoxNTA4NzM5ODIzfQ.ECpXOOPtDw5hkQOZzpvjMFfUBd3pgQdRfTddDp-wYQ4"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "cppscu@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/workspace/1/users",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"workspace",
+								"1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "workspace-users-get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{authkey}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{host}}/workspace/1/users",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"workspace",
+								"1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "workspace-user-add-invalid",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "order",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/workspace/21",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"workspace",
+								"21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "workspace-list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{host}}/workspace/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"workspace",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "workspace-add",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "my new workspace {{$timestamp}}",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/workspace/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"workspace",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "workspace/edit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "raul personal",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/workspace/6",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"workspace",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "board",
+			"description": "",
+			"item": [
+				{
+					"name": "folder",
+					"description": "",
+					"item": [
+						{
+							"name": "board/folder/2",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{authkey}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "name",
+										"value": "raul rename"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "raul rename {{$randomInt}}",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "idParent",
+											"value": "2",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "order",
+											"value": "2",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/workspace/{{idwk}}/board/folder/1",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"workspace",
+										"{{idwk}}",
+										"board",
+										"folder",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "board/folder/DELETE",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{authkey}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "{{host}}/workspace/{{idwk}}/board/folder/1",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"workspace",
+										"{{idwk}}",
+										"board",
+										"folder",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "board-folder/create",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{authkey}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "my new folder 2",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/workspace/{{idwk}}/board/folder",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"workspace",
+										"{{idwk}}",
+										"board",
+										"folder"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "field",
+					"description": "",
+					"item": [
+						{
+							"name": "board/field/delete",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{authkey}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "{{host}}/workspace/{{idwk}}/board/{{idboard}}/field/974156b5b2",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"workspace",
+										"{{idwk}}",
+										"board",
+										"{{idboard}}",
+										"field",
+										"974156b5b2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "field/340d7b9e8d",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{authkey}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {},
+								"url": {
+									"raw": "{{host}}/workspace/{{idwk}}/board/1/field/340d7b9e8d/clone",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"workspace",
+										"{{idwk}}",
+										"board",
+										"1",
+										"field",
+										"340d7b9e8d",
+										"clone"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "board/field",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{authkey}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": {{$timestamp}},\n  \"meta\": [\n    { \"id\": 1, \"color\": \"black\", \"text\": \"a\" }\n  ],\n  \"visibility\": {\n  \t\"board\": true,\n  \t\"detail\": false\n  },\n  \"order\": 2\n}"
+								},
+								"url": {
+									"raw": "{{host}}/workspace/{{idwk}}/board/1/field/340d7b9e8d/",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"workspace",
+										"{{idwk}}",
+										"board",
+										"1",
+										"field",
+										"340d7b9e8d",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "board/addfield",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{authkey}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "type",
+											"value": "dependency",
+											"description": "['date', 'number', 'short-text', 'selector', 'person', 'comment', 'timeline', 'external-link', 'percentage', 'dependency', 'label', 'file']",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "my-reference",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "min",
+											"value": "",
+											"description": "when needed",
+											"type": "text"
+										},
+										{
+											"key": "max",
+											"value": "",
+											"description": "when needed",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/workspace/{{idwk}}/board/{{idboard}}/add-field",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"workspace",
+										"{{idwk}}",
+										"board",
+										"{{idboard}}",
+										"add-field"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "board/list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{authkey}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{host}}/workspace/{{idwk}}/board/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"workspace",
+								"{{idwk}}",
+								"board",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "board/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{authkey}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "board {{$timestamp}}",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "board description",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "boardAccessType",
+									"value": "0",
+									"description": "type of board access: 0 - public, 1 - restricted to list",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/workspace/{{idwk}}/board",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"workspace",
+								"{{idwk}}",
+								"board"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "board/update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "idFolder",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "order",
+									"value": "3",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/workspace/{{idwk}}/board/118",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"workspace",
+								"{{idwk}}",
+								"board",
+								"118"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "board/detail",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{host}}/workspace/{{idwk}}/board/3",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"workspace",
+								"{{idwk}}",
+								"board",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "board/delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{host}}/workspace/{{idwk}}/board/11",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"workspace",
+								"{{idwk}}",
+								"board",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "board/search/raul",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{host}}/workspace/{{idwk}}/board/{{idboard}}/search/raul",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"workspace",
+								"{{idwk}}",
+								"board",
+								"{{idboard}}",
+								"search",
+								"raul"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "board/clone",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{host}}/workspace/{{idwk}}/board/118/clone",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"workspace",
+								"{{idwk}}",
+								"board",
+								"118",
+								"clone"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "work-item",
+			"description": "",
+			"item": [
+				{
+					"name": "work-item-list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{host}}/board/2/work-item/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"board",
+								"2",
+								"work-item",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "work-item-add",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{authkey}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "new work item 5",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "description {{$guid}}",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "idParent",
+									"value": "2",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "idNest",
+									"value": "7",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/board/{{idboard}}/work-item",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"board",
+								"{{idboard}}",
+								"work-item"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "work-item/detail",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "comment",
+									"value": "comment {{$timestamp}}",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "user",
+									"value": "",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/board/{{idboard}}/work-item/56",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"board",
+								"{{idboard}}",
+								"work-item",
+								"56"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "work-item/update-comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "comment",
+									"value": "this is a new comment {{$timestamp}} update",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/board/{{idboard}}/work-item/56/comment/5",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"board",
+								"{{idboard}}",
+								"work-item",
+								"56",
+								"comment",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "work-item/update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "idNest",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/board/2/work-item/450",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"board",
+								"2",
+								"work-item",
+								"450"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "work-item/delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{host}}/board/13/work-item/44",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"board",
+								"13",
+								"work-item",
+								"44"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "work-item/file",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"description": "",
+									"type": "file"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/board/87/work-item/961/file",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"board",
+								"87",
+								"work-item",
+								"961",
+								"file"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "work-item/field/new-field",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "myNewField",
+									"value": "value",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/board/{{idboard}}/work-item/1/field",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"board",
+								"{{idboard}}",
+								"work-item",
+								"1",
+								"field"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "work-item/field",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"06271b868a\": [27, 28]\n}"
+						},
+						"url": {
+							"raw": "{{host}}/board/{{idboard}}/work-item/20/field",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"board",
+								"{{idboard}}",
+								"work-item",
+								"20",
+								"field"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "work-item/comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "comment",
+									"value": "test comment {{$timestamp}} update",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/board/{{idboard}}/work-item/56/comment",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"board",
+								"{{idboard}}",
+								"work-item",
+								"56",
+								"comment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/admin/reorder/1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{host}}/admin/reorder/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"admin",
+								"reorder",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "work-item/56/comment/5",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{host}}/board/{{idboard}}/work-item/56/comment/5",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"board",
+								"{{idboard}}",
+								"work-item",
+								"56",
+								"comment",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "nest",
+			"description": "",
+			"item": [
+				{
+					"name": "nest/add",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "nest {{$timestamp}}",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "nest to delete",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/board/{{idboard}}/nest",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"board",
+								"{{idboard}}",
+								"nest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "nest/list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{host}}/board/{{idboard}}/nest/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"board",
+								"{{idboard}}",
+								"nest",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "nest/put/1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "idBoard",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/board/3/nest/3",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"board",
+								"3",
+								"nest",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "nest/delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{host}}/board/{{idboard}}/nest/6",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"board",
+								"{{idboard}}",
+								"nest",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "nest/clone",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{host}}/board/{{idboard}}/nest/clone/7",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"board",
+								"{{idboard}}",
+								"nest",
+								"clone",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "import",
+			"description": "",
+			"item": [
+				{
+					"name": "import/trello",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{host}}/board/1/import/trello",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"board",
+								"1",
+								"import",
+								"trello"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "import/github",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{host}}/board/1/import/github",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"board",
+								"1",
+								"import",
+								"github"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "admin",
+			"description": "",
+			"item": []
+		},
+		{
+			"name": "template",
+			"description": "",
+			"item": [
+				{
+					"name": "template/list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{host}}/workspace/{{idwk}}/template/list/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"workspace",
+								"{{idwk}}",
+								"template",
+								"list",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "template/create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "goal template second",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/workspace/{{idwk}}/template/create/153",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"workspace",
+								"{{idwk}}",
+								"template",
+								"create",
+								"153"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "template/update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "new name",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/workspace/{{idwk}}/template/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"workspace",
+								"{{idwk}}",
+								"template",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "template/delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authkey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{host}}/workspace/{{idwk}}/template/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"workspace",
+								"{{idwk}}",
+								"template",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "{{host}}/status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{host}}/status",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{host}}/status",
+			"request": {
+				"method": "OPTIONS",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{host}}/status",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"status"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

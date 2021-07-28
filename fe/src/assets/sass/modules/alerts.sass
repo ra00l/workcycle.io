@@ -1,0 +1,42 @@
+/****************** START: ALERTS *******************/
+.alerts-wrapper
+  position: fixed
+  width: 100%
+  z-index: 9999
+  top: 0
+
+  .alert
+    text-align: center
+    padding: 8px 30px
+    border-radius: 0
+    border: 0
+    margin-bottom: 0
+    position: relative
+
+    i.fa
+      cursor: pointer
+      position: absolute
+      right: 0
+      top: 0
+      padding: 10px
+
+    &.alert-danger
+      background-color: #E75151
+      border-bottom: 1px solid darken(#E75151, 5%)
+      color: $black
+
+    &.alert-success
+      background-color: $button-success
+      border-bottom: 1px solid darken($button-success, 5%)
+      color: $black
+
+    &.alert-info
+      background-color: #8BCFCC
+      border-bottom: 1px solid darken(#8BCFCC, 5%)
+      color: $black
+
+    &.alert-warning
+      background-color: #FCC314
+      border-bottom: 1px solid darken(#FCC314, 5%)
+      color: $black
+/****************** END: ALERTS *******************/

@@ -1,0 +1,62 @@
+.percentage-field
+  padding: 12px 16px
+
+  .percentage-field-info
+    h4
+      margin: 0
+      color: #0095FF
+      font-size: 12px
+      font-weight: 700
+
+    .value
+      text-align: center
+      font-size: 14px
+      font-weight: 700
+      color: #000000
+
+  .rangeslider-horizontal
+    border: 1px solid rgba(232, 230, 230, 1)
+    box-shadow: none
+    background: transparent
+    border-radius: 4px
+
+  .rangeslider-horizontal .rangeslider__fill
+    background-color: rgba(81, 196, 10, 1)
+    border-radius: 3px
+
+  .rangeslider-horizontal .rangeslider__handle
+    width: 24px
+    height: 24px
+    border-radius: 50%
+    text-align: center
+
+  .rangeslider-horizontal .rangeslider__handle-label
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate3d(-50%,-50%,0)
+
+  .rangeslider-horizontal .rangeslider__handle:after
+    position: static
+
+  &.completed
+    .rangeslider__handle-label
+      font-family: Font Awesome\ 5 Free
+      -webkit-font-smoothing: antialiased
+      display: inline-block
+      font-style: normal
+      font-variant: normal
+      text-rendering: auto
+      line-height: 1
+      font-size: 26px
+      color: rgba(81, 196, 10, 1)
+
+      &:before
+        content: "\F058"
+
+  // overwrite the style from the component  
+  .rangeslider__handle-tooltip
+    display: none
+
+  .rangeslider .rangeslider__handle
+    box-shadow: none

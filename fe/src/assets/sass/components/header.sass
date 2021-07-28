@@ -1,0 +1,219 @@
+#root
+  padding-top: 65px
+
+.header
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 100
+
+  background: $primary
+  color: $white
+  padding: 8px 28px
+  height: 65px
+
+  // Children
+  // ---------
+  &-menu
+    font-size: $font-size-bigger
+    margin-right: 32px
+    width: 30px
+    cursor: pointer
+
+  &-title
+    margin: 0
+    font-weight: $font-weight-bold
+    color: $white
+
+  &.not-logged-in
+    padding: 14px 128px
+
+  .header-right-side
+    select
+      margin-right: 10px
+      color: black
+      -webkit-appearance: none
+      -moz-appearance: none
+      appearance: none
+      padding: 5px 10px
+
+    > div > button
+      padding: 0!important
+      width: auto!important
+      height: auto!important
+
+    .fa.fa-bell
+      font-size: 20px
+      margin-right: 10px
+    img
+      margin-right: 10px
+      max-width: 35px
+      -webkit-border-radius: 50%
+      -moz-border-radius: 50%
+      border-radius: 50%
+
+    .userInfo
+      color: white
+      cursor: pointer
+
+.userInfoDetail
+  z-index: 9
+  background-color: white
+  width: 300px
+  border: solid 1px #ddd
+  padding: 15px
+  color: black
+  div.name, div.email
+    font-size: 18px
+    padding-left: 5px
+
+  div.email
+    font-size: 14px
+    font-style: italic
+  img
+    max-width: 70px
+    margin-right: 8px
+  div.clearfix
+    margin-bottom: 10px
+  a.menu-link
+    color: #999997
+    border-top: solid 1px #eee
+    font-size: 20px
+    display: block
+    text-align: center
+    padding: 10px
+  a.workspaceLink
+    text-align: left
+    display: block
+    padding: 10px
+    border: solid 1px transparent
+
+    &.selected
+      border: solid 1px $primary
+      border-radius: 5px
+      i
+        float: right
+  button.button--secondary
+    min-width: 110px
+    width: 110px
+  a.signout
+    font-weight: bold
+    color: black
+
+  .workspace-actions
+    margin-top: 30px
+
+@media screen and (max-width: 767px)
+  .header
+    padding: 15px
+
+  .header-menu
+    margin-right: 6px
+
+.loading-bar
+  //display: none
+  height: 5px
+  background: #0095FF
+  position: absolute
+  top: 0
+  right: 0
+  left: 0
+  z-index: 9999
+  overflow: hidden
+
+  .line-loader
+      height: 3px
+      width: 100%
+      position: relative
+      overflow: hidden
+      background-color: #0095FF
+
+      &:before
+        display: block
+        position: absolute
+        content: ""
+        left: -200px
+        width: 200px
+        height: 3px
+        background-color: #fff
+        animation: loading 2s linear infinite
+
+  @keyframes loading
+    from
+      left: 0%
+      width: 0%
+
+    20%
+      left: 10%
+      width: 20%
+
+    50%
+      left: 30%
+      width: 30%
+
+    80%
+      width: 30%
+      left: 80%
+
+    95%
+      width: 30%
+      left: 95%
+
+    to
+      left: 100%
+      width: 30%
+
+.form-group.search-container
+  margin: 0
+  padding-left: 15px
+  min-width: 400px
+  position: relative
+  cursor: pointer
+
+  i
+    position: absolute
+    z-index: 1
+    font-size: 18px
+    top: 12px
+    left: 28px
+
+  input
+    background: rgba(255, 255, 255, 0.5)
+    border: 0
+    padding-left: 42px
+    cursor: pointer
+
+    &:focus
+      background: rgba(255, 255, 255, 0.5)
+      border: 0
+
+.global-add.form-group, .global-style.form-group
+  position: relative
+  margin: 0
+  margin-left: 20px
+  white-space: nowrap
+  height: 45px
+  padding: 6px 15px
+  border-radius: 5px
+  box-shadow: 2px 0.03px 8px 0px rgba(0, 0, 0, 0.21)
+  background: rgba(255, 255, 255, 0.5)
+  cursor: pointer
+  &:hover
+    background: rgba(255, 255, 255, 0.8)
+  > i, > .inner
+    line-height: 35px
+    font-size: 14px
+    font-weight: bold
+
+    i
+      padding-left: 5px
+
+.global-style.form-group
+  height: 35px
+  padding: 2px 15px
+
+@media (max-width: 600px)
+  .form-group.search-container
+    display: none
+

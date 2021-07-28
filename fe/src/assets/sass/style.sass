@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700")
+// --------------------------------------------------------------------------------------
+// VARIABLES
+// --------------------------------------------------------------------------------------
+@import "variables/colors"
+@import "variables/typography"
+
+// overite the boostrap font base
+$font-size-base: $font-size-small !default
+
+// --------------------------------------------------------------------------------------
+// FONT AWEOMSE
+// --------------------------------------------------------------------------------------
+@import "../font/font-awesome/css/fontawesome-all.min.css"
+
+// --------------------------------------------------------------------------------------
+// BOOTSTRAP
+// --------------------------------------------------------------------------------------
+// Core variables and mixins
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/variables"
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/mixins"
+
+// Reset and dependencies
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/normalize"
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/thumbnails"
+//@import "~bootstrap-sass/assets/stylesheets/bootstrap/glyphicons"
+
+// Core CSS
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/scaffolding"
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/type"
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/grid"
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/forms"
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/buttons"
+
+// Components
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/component-animations"
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/dropdowns"
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/button-groups"
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/input-groups"
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/navbar"
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/breadcrumbs"
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/badges"
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/grid"
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/media"
+
+// Utility classes
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/utilities"
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities"
+
+// --------------------------------------------------------------------------------------
+// GENERAL
+// --------------------------------------------------------------------------------------
+@import "utility/general.sass"
+
+// --------------------------------------------------------------------------------------
+// 3rd PARTY COMPONENTS
+// --------------------------------------------------------------------------------------
+@import "~react-select/scss/default"
+@import "~react-dates/css/styles.scss"
+@import "~react-dd-menu/src/scss/react-dd-menu"
+@import "~react-rangeslider/umd/rangeslider.min.css" // react slider
+@import "~react-draft-wysiwyg/dist/react-draft-wysiwyg.css"
+@import "~react-draft-wysiwyg/dist/react-draft-wysiwyg.css"
+
+// --------------------------------------------------------------------------------------
+// ATOMS
+// --------------------------------------------------------------------------------------
+@import "atoms/flex"
+@import "atoms/margin"
+@import "atoms/text"
+
+// --------------------------------------------------------------------------------------
+// UTILITY
+// --------------------------------------------------------------------------------------
+@import "./utility/mixins"
+
+// --------------------------------------------------------------------------------------
+// COMPONENTS
+// --------------------------------------------------------------------------------------
+@import "./components/header"
+@import "./components/card"
+@import "./components/card-form"
+@import "./components/form"
+@import "./components/button"
+@import "./components/select"
+@import "./components/error-message"
+@import "./components/dropDownMenu/dropDownMenu"
+@import "./components/nests/nest"
+@import "./components/nests/moveNest"
+@import "./components/folder"
+@import "./components/breadcrumbs"
+@import "./components/alert"
+@import "./components/contextMenu"
+// -----------------------------------------------
+// board
+// -----------------------------------------------
+@import "./components/board/boards"
+@import "./components/board/board"
+@import "./components/board/boardDescriptionField"
+@import "./components/board/boardMembersField"
+@import "./components/board/boardFormActions.sass"
+@import "./components/board/boardFilters"
+@import "./components/board/boardFields"
+@import "./components/board/boardFieldsCompact"
+@import "./components/board/boardFieldsTable"
+// -----------------------------------------------
+// workspace
+// -----------------------------------------------
+@import "./components/workspace/members"
+// -----------------------------------------------
+// goal
+// -----------------------------------------------
+@import "./components/goals/goals"
+// -----------------------------------------------
+// workitem
+// -----------------------------------------------
+@import "./components/workitem/workitem"
+@import "./components/workitem/dateField"
+@import "./components/workitem/workitem.createChild"
+@import "./components/workitem/percentageField"
+@import "./components/workitem/numberFieldExtraInfo"
+@import "./components/workitem/workItemChildren"
+@import "./components/workitem/workitem.addAsChild"
+@import "./components/editor"
+// -----------------------------------------------
+// fields
+// -----------------------------------------------
+@import "./components/fields/fields"
+
+@import "./components/global-search"
+// --------------------------------------------------------------------------------------
+// MODULES
+// --------------------------------------------------------------------------------------
+@import "./modules/dialog"
+@import "./modules/loader"
+@import "./modules/alerts"
+@import "./modules/navigation"
+
+// --------------------------------------------------------------------------------------
+// PAGES
+// --------------------------------------------------------------------------------------
+@import "./pages/signin"
+@import "./pages/resetPassword"
+@import "./pages/register"
+@import "./pages/dashboard"
+@import "./pages/account"
+
+
+@import "./themes/config"
+@import "./themes/theme-green"
+@import "./themes/theme-yellow"
+@import "./themes/theme-blue"
+@import "./themes/theme-cyan"
+@import "./themes/theme-magenta"
+@import "./themes/theme-orange"
+@import "./themes/theme-red"
+@import "./themes/theme-violet"

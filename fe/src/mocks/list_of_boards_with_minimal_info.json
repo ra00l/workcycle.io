@@ -1,0 +1,27 @@
+[
+    {
+        "id": "1",
+        "name": "board name 1",
+        "order": 1
+    },
+    {
+        "id": "2",
+        "name": "board name 2",
+        "order": 2
+    },
+    {
+        "id": "3",
+        "name": "board name 2",
+        "order": 3
+    },
+    {
+        "id": "5",
+        "name": "board name 3",
+        "order": 4
+    },
+    {
+        "id": "6",
+        "name": "asdasdasd",
+        "order": 5
+    }
+]

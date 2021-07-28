@@ -1,0 +1,52 @@
+$STRONG_GREEN: #51C40A
+$PURE_BLUE: #0095FF
+$DESATURATED_VIOLET: #9C7FBA
+$VIVID_ORANGE: #FF9A03
+$STRONG_YELLOW: #D6CB00
+$LIGHT_RED: #FF3D3D
+$MODERATE_CYAN: #37C4AA
+$SOFT_MAGENTA: #E496F2
+
+
+@mixin generate-theme($themeColor, $themeName)
+  body.#{$themeName}
+
+    a
+      color: $themeColor
+
+    .userInfoDetail .workspaceLink.selected
+      border-color: $themeColor
+      color: $themeColor
+      i
+        color: $themeColor
+
+    .loading-bar, .loading-bar .line-loader
+      background: $themeColor
+    .loader-circle
+      border-color: $themeColor $themeColor $themeColor transparent
+
+    .button.button--primary
+      background: $themeColor
+
+    .header
+      background: $themeColor
+      .nav
+        background: $themeColor
+        ul, li.nav-item, a
+          background: $themeColor
+          color: white
+
+    .boards-list
+      .card.card--active
+        border-color: $themeColor
+      .card.card-add i, .card.card--active .card--board
+        color: $themeColor
+
+    .workitem-field:hover
+      border-color: $themeColor !important //raul: select has built-in style for border. have to override!
+
+    ul.accountMenu li a.active
+      border-bottom-color: $themeColor
+
+    .alert
+      border-color: $themeColor

@@ -1,0 +1,289 @@
+// ---
+// board create is used in the create board modal
+// ---
+.board-create
+  &-header
+    margin-bottom: 24px
+
+    h3
+      font-size: 18px
+      margin: 0
+
+.board-clone
+  h3
+    margin: 0
+
+
+.all-loaded
+  text-align: center
+.load-more-button
+  width: 100%
+  margin-top: 20px
+
+.work-item-change-history
+  cursor: pointer
+  border-bottom: solid 1px #d0d0d0
+  padding: 10px
+  transition: all ease .5s
+  overflow: hidden
+
+  &:hover
+    color: $primary
+  
+  .userAvatar
+    display: inline-block
+  .userIcon
+    margin: 0
+    padding-right: 5px
+
+  .title
+    margin: 0
+    margin-top: 5px
+    font-size: 16px
+
+  .action
+    padding-left: 5px
+
+  .new-description
+      h2
+        font-size: 15px
+        margin-top: 0
+
+  .old-description
+    font-size: 10px
+    color: #aaa
+
+  &:hover
+    opacity: 1
+
+// ---
+// used in the board detailed view
+// ---
+.board-detailed
+  .board
+    &-title-actions-section
+      background: rgba(232, 230, 230, 0.55)
+      transition: background 0.2s
+
+      &.sticky
+        position: fixed
+        width: 100%
+        top: 65px
+        background: rgba(232, 230, 230, 1)
+        z-index: 2
+
+      .board-notifications,
+      .board-add
+        position: relative
+        margin: 0
+        margin-left: 20px
+        white-space: nowrap
+        border-radius: 5px
+        box-shadow: 2px 0.03px 8px 0px rgba(0, 0, 0, 0.21)
+        background: rgba(255, 255, 255, 0.5)
+        cursor: pointer
+        color: #444444
+        padding: 5px 7px
+        display: flex
+        align-items: center
+
+        button
+          padding: 0!important
+          width: auto!important
+          height: auto!important
+
+        // &.read
+        //   opacity: .5
+
+      .board-title
+        font-size: 16px
+        font-weight: 700
+        font-style: italic
+        color: black
+
+        .board-title-edit
+          outline: none
+          border: 0
+
+        .board-title-placeholder
+          display: flex
+          align-items: center
+          width: 100%
+          height: 100%
+          border: 1px solid transparent
+          padding: 6px 2px
+          cursor: text
+
+          &:hover
+            border: 1px dashed gray
+
+      .goal-info
+        display: flex
+        align-items: center
+        color: #444444
+
+        .progress-info
+          padding-right: 5px
+
+          i
+            font-size: 18px
+            color: #19B136
+
+        .goal-due-date
+          margin-left: 20px
+
+          .SingleDatePickerInput
+            border: 1px solid transparent
+            border-radius: 5px
+            box-shadow: 2px 0.03px 8px 0px rgba(0, 0, 0, 0.21)
+            background: rgba(255, 255, 255, 0.5)
+
+          .DateInput
+            padding: 0
+            width: 100px
+
+          .DateInput__display-text--has-input
+            color: #444444
+            font-size: 14px
+            font-weight: 700
+            text-align: center
+
+      .right-side
+        a
+          position: relative
+          margin: 0
+          margin-left: 20px
+          white-space: nowrap
+          height: 45px
+          padding: 9px 15px
+          border-radius: 5px
+          box-shadow: 2px 0.03px 8px 0px rgba(0, 0, 0, 0.21)
+          background: rgba(255, 255, 255, 0.5)
+          cursor: pointer
+          color: #444444
+
+      .board-actions
+        ul
+          list-style-type: none
+          margin: 0
+          padding: 0
+
+          li
+            display: inline-block
+            width: auto
+            padding-left: 16px
+            color: #999997
+            a
+              color: #999997
+            i
+              font-size: 20px
+
+.dialog--glass-pane .content-wrapper.create-board-modal-container
+  max-height: 90vh
+  top: 50px
+
+.create-board-modal-container
+  width: 90%!important
+  height: 90vh
+
+  i.dialog-header-close
+    position: absolute
+    top: 5px
+    right: 5px
+  // height: 600px
+
+  .create-new-board-modal
+    display: flex
+
+    .create-board-actions
+      .button--primary
+        width: 100%
+
+
+    .templates-navigation
+      position: absolute
+      top: 20px
+      left: 20px
+      width: 300px
+      bottom: 23px
+      box-sizing: border-box
+      padding: 0
+      border: 0px solid rgba(153, 153, 151, 1)
+      background-color: rgba(247, 249, 250, 1)
+      border-radius: 3px
+      box-shadow: 2px 0.03px 8px 0px rgba(0, 0, 0, 0.21)
+
+      .template-search
+        position: absolute
+        top: 10px
+        padding: 10px 20px
+        width: 100%
+        z-index: 1
+
+      .navigation
+        margin-bottom: 4px
+        width: 100%
+        position: absolute
+        top: 60px
+        bottom: 60px
+        padding: 10px 20px
+        overflow: auto
+
+        h3
+          margin-bottom: 0
+
+        a
+          display: block
+          font-size: 14px
+          color: #999997
+          padding: 4px 0px
+          cursor: pointer
+
+          &.selected
+            color: #0095FF
+            font-style: italic
+
+      .new-empty-board
+        position: absolute
+        bottom: 10px
+        width: 100%
+        text-align: center
+
+    .templates-preview
+      position: absolute
+      left: 320px
+      right: 20px
+      top: 20px
+      bottom: 20px
+      padding-left: 15px
+
+      .list-of-fields
+        font-size: 16px
+        float: left
+
+      .title
+        font-size: 18px
+        font-weight: bold
+        text-align: center
+
+      .preview
+        width: 100%
+        min-height: 350px
+        text-align: center
+
+        img
+          width: 100%
+          height: 100%
+
+          &.default
+            width: 80%
+
+      .template-detail-action
+        position: absolute
+        display: flex
+        bottom: 0
+        right: 0
+        left: 20px
+
+        .create-board-actions
+          float: right

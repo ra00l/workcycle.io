@@ -1,0 +1,175 @@
+body
+  font-family: 'Roboto', sans-serif
+  font-size: $font-size-small
+  color: $black
+  background: $body-background
+  transition: all 0.5s ease-in-out
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+
+// links
+a
+  cursor: pointer
+  text-decoration: none
+  font-size: $font-size-normal
+  font-weight: $font-weight-bold
+  color: $primary
+
+  &:hover,
+  &:focus
+    text-decoration: none
+
+.badge.badge-secondary
+  background-color: #C7C7C7
+  margin-left: 10px
+
+@media (min-width: 1500px)
+  .container
+    width: 1470px
+
+@media (min-width: 1650px)
+  .container
+    width: 1600px
+
+/****************** START: REACT-SELECT OVERRIDES ******************/
+
+$select-input-border-radius: 5px
+$select-input-border-color: $white
+$select-item-border-radius: 0
+$select-input-placeholder: $text-color-gray
+$select-option-focused-color: #333333 // 36px
+$select-option-focused-bg: #f1f8ff //36px
+$select-padding-vertical: 12px
+$select-padding-horizontal: 10px
+$select-input-border-focus: rgba($form-control-outline, 1)
+$select-loading-color-bg: #cfd7e6
+$select-loading-color: #7b8997
+$select-input-height:  45px
+
+
+/****************** START: GENERAL STYLES ********************/
+.workitem-row-item-title-actions, .nest-title--actions
+  color: #aaa
+  transition: all .5s ease-in-out
+  &:hover
+    color: #666
+
+.no-gutters
+  padding: 0
+.no-gutters-left
+  padding-left: 0
+.no-gutters-right
+  padding-right: 0
+
+.container
+
+  padding-left: 50px
+  padding-right: 40px
+  width: 100%
+  &.main
+    background: transparent //$white
+
+  .section-title
+    margin-top: 20px
+    min-height: 24px
+  .section-body
+    padding-left: 0
+
+ul.mainList, ul.childList
+  list-style-type: none
+  padding: 0
+  margin: 0
+  float: left
+  width: 100%
+
+ul.mainList
+  padding-bottom: 20px
+
+  li
+    float: left
+    width: 100%
+    line-height: 35px
+
+  > li > .col-sm-6 > a
+    font-size: 20px
+    color: #999
+    font-weight: normal
+  i
+    padding-left: 10px
+    font-size: 25px
+    color: #AAA
+    cursor: pointer
+
+ul.childList
+  padding-top: 10px
+
+.alerts-wrapper
+  .alert.alert-danger, .alert.alert-success
+    font-size: 20px
+    color: white
+
+.logo-container
+  margin-left: 20px
+  margin-right: 42px
+
+img#workcycle-logo
+  height: 50px
+  margin-top: 15px
+
+@mixin body-zoom($zoom, $width)
+  body.ZOOM_#{$zoom * 100}
+    .nests-list
+      transform: scale($zoom)
+      transform-origin: top left
+      width: #{$width + '%'} //(100 = scale)% + 100%
+
+@include body-zoom(0.9, 110)
+@include body-zoom(0.8, 124)
+@include body-zoom(0.7, 142)
+@include body-zoom(0.6, 166)
+@include body-zoom(0.5, 200)
+@include body-zoom(0.4, 250)
+
+/****************** END: GENERAL STYLES ********************/
+
+// display
+
+.displayNone
+  display: none
+
+.board-header
+  display: flex
+  align-items: center
+  margin-bottom: 24px
+  justify-content: space-between
+
+  h3
+    margin: 0
+    flex: 1
+    display: flex
+    align-items: center
+
+  > div
+    flex: 1
+
+  i
+    font-size: 22px
+    cursor: pointer
+
+  .tabs
+    .tab
+      color: #999997
+      font-size: 14px
+      font-weight: 700
+      cursor: pointer
+      margin: 0 16px
+
+      &-selected,
+      &:hover
+        color: #000000
+        border-bottom: 2px solid rgba(0, 149, 255, 1)
+        padding-bottom: 2px
+
+.space-vertical-top
+  margin-top: 10px
